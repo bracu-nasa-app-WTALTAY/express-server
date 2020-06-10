@@ -2,7 +2,6 @@ const express = require('express')
 const app = express()
 
 const path = require('path')
-// const staticServePath = path.join(__dirname, '..', 'client', 'build')
 const staticServePath = path.join(__dirname, 'build')
 app.use('/', express.static(staticServePath))
 
